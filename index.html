@@ -4,200 +4,143 @@
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ajar — Product Design Case</title>
+<title>Dotarte — Produktdesign Portfolio (UX/UI)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-  <a href="#top" class="logo-dot" aria-label="Home"></a>
-  <ul class="nav-links">
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
-  </ul>
-</nav>
+<section class="hero-section" id="top">
+  <nav class="pill-nav">
+    <a href="#kontakt">Kontakt</a>
+    <a href="#projects">Portfolio</a>
+  </nav>
 
-<main class="hero" id="top">
-  <p class="eyebrow">· End‑to‑End Product Design Case — von Research bis zum High‑Fidelity‑Prototyp ·</p>
+  <div class="hero-content">
+    <h1 class="headline-font">Hallo!</h1>
+    <p>Ich bin Produktdesignerin (UX/UI) und liebe es, aus komplexen Problemen einfache, durchdachte Lösungen zu machen. Am meisten begeistert mich, wenn gutes Design den Alltag leichter macht.</p>
+    <a href="#kontakt" class="btn-gold">kontaktiere mich</a>
+  </div>
+</section>
 
-  <div class="hero-grid">
-    <div class="hero-copy">
-      <p class="date-range">8. April – 28. Juli 2026</p>
-      <h1>Ajar – eine sanfte Begleiter‑App, die Erwachsenen mit ADHS hilft, liegengebliebene Briefe und bürokratische Aufgaben pünktlich zu erledigen — bevor daraus die <em>„ADHS‑Steuer“</em> wird.</h1>
+<section class="portfolio-section" id="projects">
+  <div class="portfolio-grid">
 
-      <div class="meta-columns">
-        <div class="meta-block">
-          <h3>Tools</h3>
-          <ul>
-            <li>Figma</li>
-            <li>Miro</li>
-            <li>Claude (Cowork)</li>
-            <li>WhisperNotes*</li>
-          </ul>
+    <div class="portfolio-row">
+      <div class="project-card is-placeholder card-small">
+        <span class="card-label">Bald verfügbar</span>
+        <div class="card-media">
+          <div class="device-phone">
+            <div class="screen"><div class="blur-fill"></div></div>
+          </div>
         </div>
-        <div class="meta-block">
-          <h3>Research</h3>
-          <ul>
-            <li>5 Interviews</li>
-            <li>20 Umfragen</li>
-            <li>3 Iterationsrunden</li>
-          </ul>
+        <p class="card-desc">Mobile App Konzept — folgt in Kürze.</p>
+      </div>
+
+      <div class="project-card is-placeholder card-large">
+        <span class="card-label">Bald verfügbar</span>
+        <div class="card-media">
+          <div class="device-laptop">
+            <div class="lid"><div class="screen"><div class="blur-fill"></div></div></div>
+            <div class="base"></div>
+          </div>
         </div>
+        <p class="card-desc">Web-Plattform Redesign — folgt in Kürze.</p>
       </div>
     </div>
 
-    <div class="phone-wrap">
-      <img class="phone-mockup" src="images/ajar-mockup.png" alt="Ajar app splash screen on an iPhone, showing a sitting cat silhouette above the app name">
+    <div class="portfolio-row">
+      <div class="project-card is-placeholder card-large">
+        <span class="card-label">Bald verfügbar</span>
+        <div class="card-media">
+          <div class="device-laptop">
+            <div class="lid"><div class="screen"><div class="blur-fill"></div></div></div>
+            <div class="base"></div>
+          </div>
+        </div>
+        <p class="card-desc">Dashboard & Datenvisualisierung — folgt in Kürze.</p>
+      </div>
+
+      <a href="projects/ajar.html" class="project-card is-link card-small">
+        <span class="card-label">Ajar — Case Study</span>
+        <div class="card-media">
+          <div class="ajar-preview">
+            <img src="projects/images/ajar-mockup.png" alt="Ajar App Splash Screen">
+            <img src="projects/images/phone1-scan.png" alt="Ajar Foto-Scan Screen">
+          </div>
+        </div>
+        <div class="card-desc">
+          <span class="card-title">Ajar</span>
+          <span class="card-status">Concept</span>
+          <p class="card-text">Eine sanfte Begleiter‑App, die Erwachsenen mit ADHS hilft, liegengebliebene Briefe und bürokratische Aufgaben pünktlich zu erledigen.</p>
+          <span class="card-cta">Zur Case Study →</span>
+        </div>
+      </a>
     </div>
-  </div>
-</main>
 
-<section class="problem" id="problem">
-  <p class="section-eyebrow">Das Problem</p>
-
-  <div class="problem-copy">
-    <p>93 % der Menschen mit ADHS, die ich befragt habe, wissen genau, was ansteht — und schaffen es trotzdem nicht, mit der Aufgabe anzufangen. Viele haben im Job durch feste Termine und andere Menschen Struktur, scheitern aber privat allein an Papierkram und wiederkehrenden bürokratischen Aufgaben.</p>
-
-    <p>Ein Interview hat das Problem greifbar gemacht: Eine Person hatte einen Brief wochenlang nicht geöffnet, aus Angst vor dem, was darin stehen könnte — am Ende war die Frist verpasst und das Konto gesperrt.</p>
-
-    <p>Betroffene nennen das die <strong>„ADHS‑Steuer"</strong>. Es ist aber <strong>keine Faulheit</strong>, sondern <strong>Handlungsparalyse</strong> durch Angst vor dem Unbekannten, verstärkt durch <strong>Zeitblindheit</strong>, bei der jede Aufgabe gleich dringend wirkt. Hinzu kommt ein medizinisch gut belegter Zusammenhang: Menschen mit ADHS haben häufig auch grundsätzliche <strong>Schwierigkeiten beim Lesen</strong>.</p>
-  </div>
-
-  <div class="problem-highlight">
-    <div class="stat-block">
-      <span class="stat-number">93 %</span>
-      <p class="stat-caption">kennen die Aufgabe, können aber nicht anfangen.</p>
-    </div>
-
-    <div class="quote-block">
-      <span class="quote-mark">&ldquo;</span>
-      <blockquote>Ich habe den Brief nicht geöffnet — es hat so lange gedauert, dass die Frist verpasst wurde und mein Konto geschlossen wurde.</blockquote>
-      <span class="quote-mark close">&rdquo;</span>
-    </div>
   </div>
 </section>
 
-<section class="process" id="process">
-  <p class="section-eyebrow">Prozess &amp; Schlüsselentscheidungen</p>
+<footer class="contact-section" id="kontakt">
+  <div class="contact-inner">
+    <div>
+      <h2 class="headline-font">Let's stay in touch</h2>
+      <p>Du möchtest mehr aus meinem Portfolio sehen, hast Fragen oder ein Projekt, bei dem ich mitwirken könnte? Ich freue mich, von dir zu hören.</p>
+    </div>
 
-  <div class="timeline">
-    <div class="timeline-row left">
-      <span class="timeline-dot"></span>
-      <div class="timeline-item">
-        <p class="step-label">Entscheidung 1</p>
-        <h3>Zielgruppen‑Fokus</h3>
-        <p>Fokus auf Erwachsene mit ADHS, die im Job durch äußere Struktur (Deadlines, andere Menschen) gut funktionieren, aber privat ohne diese Struktur bei Alltagsaufgaben einfrieren. Der Schmerzpunkt war hier am größten, weil Scham und Leidensdruck hoch sind, aber kaum sichtbar.</p>
+    <div class="contact-list">
+      <div class="row">
+        <img class="row-icon" src="images/icon-linkedin.png" alt="" aria-hidden="true">
+        <span class="divider"></span>
+        <a href="https://linkedin.com/in/DEIN-PROFIL" target="_blank" rel="noopener">linkedin</a>
       </div>
-    </div>
-
-    <div class="timeline-row right">
-      <span class="timeline-dot"></span>
-      <div class="timeline-item">
-        <p class="step-label">Entscheidung 2</p>
-        <h3>Ursprüngliche Hypothese (breiter Ansatz)</h3>
-        <p>Erster Gedanke: eine App für beliebige wiederkehrende Alltagsaufgaben. Täglich wird eine Aufgabe zugelost oder gewählt — Briefe waren nur einer von mehreren möglichen Aufgabentypen, etwa einmal pro Woche. Kerngedanke schon hier: Externalisierung der Entscheidung — die App bestimmt, was heute zu tun ist, damit die Person nicht selbst entscheiden und priorisieren muss. Das Wichtigste war, die Aufgabe überhaupt anzufangen — den ersten Schritt zu machen. Aus dem Research weiß ich: Der erste Schritt ist für Menschen mit ADHS besonders schwierig — ist er aber einmal gemacht, wird die Aufgabe meistens auch durchgezogen.</p>
+      <div class="row">
+        <svg class="row-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <rect x="2" y="4" width="14" height="10" rx="2.5" fill="#2D2C2C"/>
+          <path d="M3.5 5.5L9 9.8L14.5 5.5" stroke="#F8F7F0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span class="divider"></span>
+        <a href="mailto:deine@email.de">mail</a>
       </div>
-    </div>
-
-    <div class="timeline-row left">
-      <span class="timeline-dot"></span>
-      <div class="timeline-item highlight">
-        <span class="highlight-icon">‼</span>
-        <p class="step-label">Entscheidung 3</p>
-        <h3>Der Pivot nach Testrunde 1</h3>
-        <p>Der Nutzertest widerlegte die Annahme, dass Briefe „nur eine Aufgabe unter vielen" sind. Die Teilnehmer:innen zeigten: Briefe sind nicht die Nebensache — sie sind die zentrale Hürde, weil sie zu den langweiligen, bürokratischen Aufgaben gehören, die für Menschen mit ADHS besonders schwer zu bewältigen sind. Die Würfel‑/Zufallsaufgaben‑Mechanik wurde komplett gestrichen, das MVP auf Briefe fokussiert. Das Scannen wurde sofort zum Herzstück der App.</p>
-      </div>
-    </div>
-
-    <div class="timeline-row right">
-      <span class="timeline-dot"></span>
-      <div class="timeline-item">
-        <p class="step-label">Entscheidung 4</p>
-        <h3>Bewusster Verzicht auf Gamification</h3>
-        <p>Kein Streak‑System. Begründung: Streaks führen bei Verlust zu Frustration und wirken wie eine Strafe — für eine neurodivergente Zielgruppe, die sich ohnehin oft für ihr Scheitern schämt, das falsche Signal. <strong>Stattdessen:</strong> ein humorvoller, leicht trockener Kommentar der Begleitfigur Mia nach jeder erledigten Aufgabe — Dopamin‑Kick ohne Bestrafungslogik.</p>
-      </div>
-    </div>
-
-    <div class="timeline-row left">
-      <span class="timeline-dot"></span>
-      <div class="timeline-item">
-        <p class="step-label">Entscheidung 5</p>
-        <h3>Automatisierung des Kalender‑Exports</h3>
-        <p>Von manueller Bestätigung zu automatisiertem Eintrag im externen Kalender, basierend auf einer einmaligen Einstellung im Onboarding. Das senkt Reibung weiter, weil keine Rückfrage mehr nötig ist — ein Link markiert die Aufgabe gleichzeitig auch in der App als erledigt.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="solution" id="solution">
-  <p class="section-eyebrow">Die Lösung</p>
-
-  <div class="flow-card">
-    <strong>Kern‑Flow:</strong> Foto vom Brief → OCR extrahiert Text &amp; Aufgaben → App sagt in einfachen Schritten, was zu tun ist → Export zu Kalender/Trello &amp; Co. → Archiv, durchsuchbar, mit KI‑Unterstützung.
-  </div>
-
-  <div class="feature-row">
-    <div class="feature-phone">
-      <img src="images/phone1-scan.png" alt="App-Screen: Foto-Scan Aufforderung mit Scan-Button">
-    </div>
-    <div class="feature-text">
-      <h3>Foto‑Scan</h3>
-      <p>Nutzer:in fotografiert den Brief oder fügt eine PDF‑/JPG‑Datei ein, statt ihn selbst lesen und verstehen zu müssen. Sie:er macht nur den ersten Schritt — alles Weitere übernimmt die App.</p>
-      <p>Garantiert ist dabei, dass für heute keine weiteren Schritte mehr folgen — die App wird mithilfe der KI die Aufgaben entsprechend priorisieren. Das nimmt Menschen mit ADHS die Last, die sonst schon vor der nächsten Aufgabe entsteht.</p>
-    </div>
-  </div>
-
-  <div class="feature-row reverse">
-    <div class="feature-text">
-      <h3>Aufgaben‑Erkennung</h3>
-      <p>Die App zeigt in einfachen Worten, was zu tun ist und bis wann. Zentrale Design‑Entscheidung: Nicht die Person muss den Brief einordnen und verstehen — die App übernimmt das.</p>
-      <p>Zur <strong>kognitiven Entlastung</strong> sind die Details zunächst versteckt — man muss nur wissen, was zu tun ist und bis wann. Auch die <strong>Zeitangabe</strong> zur Dauer der Aufgabe ist für die Zielgruppe sehr bedeutsam: Wer weiß, dass eine Aufgabe nur 3 Minuten dauert, empfindet weniger Druck, Last und Angst. Trotzdem sind alle Infos griffbereit — ein Klick zeigt alle Details, die aus dem Brief entnommen wurden, um die Aufgabe zu erledigen. <strong>Den Brief selbst muss man dafür wirklich nicht mehr lesen.</strong></p>
-    </div>
-    <div class="feature-phone">
-      <img src="images/phone2-task.png" alt="App-Screen: erkannte Aufgabe „Pay your insurance" mit Frist und Aktionen">
-    </div>
-  </div>
-
-  <div class="feature-stack-row">
-    <svg class="connector-svg" viewBox="0 0 1000 800" preserveAspectRatio="none">
-      <path d="M 355 520 L 400 520 L 400 68 L 460 68" fill="none" stroke="#c17a5a" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
-      <circle class="dot-end" cx="355" cy="520" r="4" vector-effect="non-scaling-stroke"/>
-      <path d="M 145 745 L 425 745 L 425 400 L 460 400" fill="none" stroke="#c17a5a" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
-      <circle class="dot-end" cx="145" cy="745" r="4" vector-effect="non-scaling-stroke"/>
-    </svg>
-    <div class="feature-phone">
-      <img src="images/phone3-detail.png" alt="App-Screen: aufgeklappte Aufgaben-Details mit Betrag, Kontonummer, Frist und Kalender-Toggle">
-    </div>
-    <div class="feature-stack">
-      <div class="feature-text">
-        <h3>Export</h3>
-        <p>Die Aufgabe wird automatisch in den externen Kalender oder ein Task‑Management‑Tool exportiert, inklusive eines Links im Termin. Über diesen Link kann die Nutzer:in die Aufgabe direkt im externen Tool abschließen — und sie wird dadurch automatisch auch in Ajar als erledigt markiert. Nutzer:innen müssen nichts doppelt markieren.</p>
-      </div>
-      <div class="feature-text">
-        <h3>Archiv</h3>
-        <p>Alle Dokumente, ob gescannt oder digital, werden zentral gespeichert und lassen sich mithilfe von KI durchsuchen, auch bei unsicherer Erinnerung. So hat man seine Unterlagen immer griffbereit — nichts geht verloren. Datenschutz ist von Anfang an mitgedacht: Die App ist auf EU‑Datenschutzrecht ausgelegt.</p>
+      <div class="row">
+        <svg class="row-icon" width="14" height="18" viewBox="0 0 11 14" fill="none" aria-hidden="true">
+          <path d="M6.11649 13.6854C7.57118 11.9254 10.8889 7.65967 10.8889 5.26362C10.8889 2.35766 8.45023 0 5.44444 0C2.43866 0 0 2.35766 0 5.26362C0 7.65967 3.31771 11.9254 4.7724 13.6854C5.12118 14.1049 5.76771 14.1049 6.11649 13.6854ZM5.44444 3.50908C5.92576 3.50908 6.38737 3.69393 6.72771 4.02297C7.06806 4.35201 7.25926 4.79829 7.25926 5.26362C7.25926 5.72895 7.06806 6.17523 6.72771 6.50427C6.38737 6.83331 5.92576 7.01816 5.44444 7.01816C4.96313 7.01816 4.50152 6.83331 4.16118 6.50427C3.82083 6.17523 3.62963 5.72895 3.62963 5.26362C3.62963 4.79829 3.82083 4.35201 4.16118 4.02297C4.50152 3.69393 4.96313 3.50908 5.44444 3.50908Z" fill="#2D2C2C"/>
+        </svg>
+        <span class="divider"></span>
+        <span>Berlin</span>
       </div>
     </div>
   </div>
 
-  <div class="feature-swipe-row">
-    <svg class="connector-svg" viewBox="0 0 1000 800" preserveAspectRatio="none">
-      <path d="M 470 255 L 350 255 L 350 30 L 12 30 L 12 148" fill="none" stroke="#c17a5a" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
-      <circle class="dot-end" cx="470" cy="255" r="4" vector-effect="non-scaling-stroke"/>
-    </svg>
-    <div class="feature-text">
-      <h3>Swipe</h3>
-      <p>Aufgaben lassen sich direkt in der Liste per Swipe erledigen oder verschieben, ohne die Detailansicht öffnen zu müssen — für reibungslose Bedienung im Alltag.</p>
-    </div>
-    <div class="feature-phone">
-      <img src="images/phone4-swipe.png" alt="App-Screen: Aufgabenliste mit Swipe-Aktionen (erledigen, archivieren, löschen)">
-    </div>
-  </div>
-</section>
+  <button class="scroll-top" onclick="document.getElementById('top').scrollIntoView({behavior:'smooth'})" aria-label="Nach oben scrollen">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M5 15l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <p class="copyright">© <span id="copyright-year">2026</span> dotarte. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+  // Stabilizes the project-card hover growth: without this, the moving
+  // card boundary can end up under the cursor and cause rapid flicker
+  // between neighboring cards. A short hide-delay (with an immediate
+  // cancel on re-entry) smooths that out.
+  document.querySelectorAll('.project-card').forEach(function (card) {
+    var hideTimer = null;
+    card.addEventListener('mouseenter', function () {
+      clearTimeout(hideTimer);
+      card.classList.add('is-active');
+    });
+    card.addEventListener('mouseleave', function () {
+      hideTimer = setTimeout(function () {
+        card.classList.remove('is-active');
+      }, 120);
+    });
+  });
+
+  document.getElementById('copyright-year').textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
