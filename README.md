@@ -15,6 +15,7 @@ Falls die Seite später doch auffindbar sein soll: beides entfernen.
 ```
 index.html          Hauptseite (Hero, Projekt-Übersicht, Kontakt)
 styles.css           Styles der Hauptseite (Creme/Gold/Dunkel, Roboto + Bricolage Grotesque)
+scripts.js            JavaScript der Hauptseite (Karten-Hover/-Fokus, Copyright-Jahr)
 robots.txt           Suchmaschinen-Sperre (siehe oben)
 images/              Bilder, die nur auf der Hauptseite verwendet werden
 projects/
