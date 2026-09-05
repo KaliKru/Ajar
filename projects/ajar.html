@@ -75,7 +75,7 @@
   <div class="case-content">
 
 <section class="problem" id="problem">
-  <p class="section-eyebrow">Das Problem</p>
+  <h2 class="section-eyebrow">Das Problem</h2>
 
   <div class="problem-copy">
     <p>93 % der Menschen mit ADHS, die ich befragt habe, wissen genau, was ansteht — und schaffen es trotzdem nicht, mit der Aufgabe anzufangen. Viele haben im Job durch feste Termine und andere Menschen Struktur, scheitern aber privat allein an Papierkram und wiederkehrenden bürokratischen Aufgaben.</p>
@@ -100,7 +100,7 @@
 </section>
 
 <section class="process" id="process">
-  <p class="section-eyebrow">Prozess &amp; Schlüsselentscheidungen</p>
+  <h2 class="section-eyebrow">Prozess &amp; Schlüsselentscheidungen</h2>
 
   <div class="timeline">
     <div class="timeline-row left">
@@ -154,7 +154,7 @@
 
 
 <section class="solution" id="solution">
-  <p class="section-eyebrow">Die Lösung</p>
+  <h2 class="section-eyebrow">Die Lösung</h2>
 
   <div class="flow-steps">
     <div class="flow-step">
@@ -267,7 +267,7 @@
 </section>
 
 <section class="testing" id="testing">
-  <p class="section-eyebrow">Testing &amp; Iteration</p>
+  <h2 class="section-eyebrow">Testing &amp; Iteration</h2>
 
   <p class="testing-intro">Drei Testrunden insgesamt:</p>
 
@@ -361,7 +361,7 @@
 </section>
 
 <section class="ai-process" id="ai-process">
-  <p class="section-eyebrow">AI im Designprozess</p>
+  <h2 class="section-eyebrow">AI im Designprozess</h2>
 
   <div class="ai-columns">
     <div class="ai-col">
@@ -382,7 +382,7 @@
 </section>
 
 <section class="learnings" id="learnings">
-  <p class="section-eyebrow">Learnings &amp; Ausblick</p>
+  <h2 class="section-eyebrow">Learnings &amp; Ausblick</h2>
 
   <div class="learning-item">
     <h3>1 — Testing</h3>
@@ -481,6 +481,7 @@
   document.getElementById('copyright-year').textContent = new Date().getFullYear();
 
   var mainNav = document.getElementById('mainNav');
+  var mainNavLink = mainNav.querySelector('a');
   var lastScrollY = window.scrollY;
 
   window.addEventListener('scroll', function () {
@@ -489,8 +490,10 @@
 
     if (scrollingDown && currentScrollY > 80) {
       mainNav.classList.add('nav-hidden');
+      mainNavLink.setAttribute('tabindex', '-1');
     } else {
       mainNav.classList.remove('nav-hidden');
+      mainNavLink.removeAttribute('tabindex');
     }
 
     lastScrollY = currentScrollY;

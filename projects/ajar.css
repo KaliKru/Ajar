@@ -3,7 +3,7 @@
     --bg-nav: #f7f6f2;
     --ink: #2b2d3a;
     --ink-soft: #565a6b;
-    --ink-faint: #8b8f9c;
+    --ink-faint: #6b6f7d;
     --navy: #383b56;
     --navy-deep: #23253a;
     --rule: rgba(43, 45, 58, 0.12);
@@ -67,7 +67,10 @@
     display: block;
   }
 
-  .logo-dot:focus-visible {
+  a:focus-visible,
+  button:focus-visible,
+  .project-card:focus-visible,
+  .toc-link:focus-visible {
     outline: 2px solid var(--navy);
     outline-offset: 4px;
   }
@@ -149,7 +152,7 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--ink-faint);
+    color: #8fa896;
     margin-bottom: 10px;
   }
 

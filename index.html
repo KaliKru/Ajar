@@ -29,46 +29,38 @@
   <div class="portfolio-grid">
 
     <div class="portfolio-row">
-      <div class="project-card is-placeholder card-small">
-        <span class="card-label">Bald verfügbar</span>
+      <div class="project-card is-placeholder card-small" tabindex="0">
+        <span class="card-label">Seasons — Cross‑Device App</span>
         <div class="card-media">
-          <div class="device-phone">
-            <div class="screen"><div class="blur-fill"></div></div>
-          </div>
+          <img class="placeholder-mockup" src="images/seasons-mockup.png" alt="Seasons App Startbildschirm: „work. travel. repeat!“ vor Strand-Hintergrund">
         </div>
-        <p class="card-desc">Mobile App Konzept — folgt in Kürze.</p>
+        <p class="card-desc">Job‑ &amp; Reise-App, plattformübergreifend nutzbar — mehr folgt in Kürze.</p>
       </div>
 
-      <div class="project-card is-placeholder card-large">
-        <span class="card-label">Bald verfügbar</span>
+      <div class="project-card is-placeholder card-large" tabindex="0">
+        <span class="card-label">Corporate Identity &amp; Brand‑Relaunch</span>
         <div class="card-media">
-          <div class="device-laptop">
-            <div class="lid"><div class="screen"><div class="blur-fill"></div></div></div>
-            <div class="base"></div>
-          </div>
+          <img class="placeholder-mockup-wide" src="images/jobsite-redesign-mockup.png" alt="Laptop-Mockup einer Recruiting-Website mit Startseite für Jobangebote in Deutschland">
         </div>
-        <p class="card-desc">Web-Plattform Redesign — folgt in Kürze.</p>
+        <p class="card-desc">Entwicklung der gesamten Corporate Identity (Logo, Farbwelt, Print‑Materialien) für eine Recruiting‑Marke. Die Website‑Umsetzung erfolgte unter meiner Art Direction — mehr folgt in Kürze.</p>
       </div>
     </div>
 
     <div class="portfolio-row">
-      <div class="project-card is-placeholder card-large">
-        <span class="card-label">Bald verfügbar</span>
+      <div class="project-card is-placeholder card-large" tabindex="0">
+        <span class="card-label">Markenentwicklung &amp; Webdesign</span>
         <div class="card-media">
-          <div class="device-laptop">
-            <div class="lid"><div class="screen"><div class="blur-fill"></div></div></div>
-            <div class="base"></div>
-          </div>
+          <img class="placeholder-mockup-wide" src="images/realestate-brand-mockup.png" alt="Laptop-Mockup einer Immobilien-Investment-Website mit Kontaktformular und Ausstattungsmerkmalen">
         </div>
-        <p class="card-desc">Dashboard & Datenvisualisierung — folgt in Kürze.</p>
+        <p class="card-desc">Vollständige Markenentwicklung für ein Immobilienprojekt — Logo, Farbwelt, Website und Exposé. Mehr folgt in Kürze.</p>
       </div>
 
       <a href="projects/ajar.html" class="project-card is-link card-small">
-        <span class="card-label">Ajar — Case Study</span>
+        <span class="card-label">Ajar — ADHS‑Begleiter‑App</span>
         <div class="card-media">
           <div class="ajar-preview">
-            <img src="projects/images/ajar-mockup.png" alt="Ajar App Splash Screen">
-            <img src="projects/images/phone1-scan.png" alt="Ajar Foto-Scan Screen">
+            <img src="projects/images/ajar-mockup-home.png" alt="Ajar App Splash Screen">
+            <img src="projects/images/phone1-scan-home.png" alt="Ajar Foto-Scan Screen">
           </div>
         </div>
         <div class="card-desc">
@@ -126,17 +118,37 @@
   // card boundary can end up under the cursor and cause rapid flicker
   // between neighboring cards. A short hide-delay (with an immediate
   // cancel on re-entry) smooths that out.
+  //
+  // The same .is-active class also powers keyboard focus (so the
+  // description isn't hover-only for keyboard users) and a tap-to-reveal
+  // on touch devices for the non-link placeholder cards, which have no
+  // hover or focus at all.
   document.querySelectorAll('.project-card').forEach(function (card) {
     var hideTimer = null;
-    card.addEventListener('mouseenter', function () {
+
+    function show() {
       clearTimeout(hideTimer);
       card.classList.add('is-active');
-    });
-    card.addEventListener('mouseleave', function () {
+    }
+    function hideSoon() {
       hideTimer = setTimeout(function () {
         card.classList.remove('is-active');
       }, 120);
-    });
+    }
+
+    card.addEventListener('mouseenter', show);
+    card.addEventListener('mouseleave', hideSoon);
+    card.addEventListener('focus', show);
+    card.addEventListener('blur', hideSoon);
+
+    if (card.classList.contains('is-placeholder')) {
+      card.addEventListener('click', function (e) {
+        if (!card.classList.contains('is-active')) {
+          e.preventDefault();
+          show();
+        }
+      });
+    }
   });
 
   document.getElementById('copyright-year').textContent = new Date().getFullYear();
